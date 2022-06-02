@@ -11,8 +11,9 @@
 int main(void)
 {
 	char msg[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	int n = sizeof(msg) - 1; /* -1 to remove the newline counted by sizeof*/
 
-	fwrite(msg, 59, 1, stderr);
+	fwrite(msg, n, 1, stderr);
 
 	return (1);
 }
