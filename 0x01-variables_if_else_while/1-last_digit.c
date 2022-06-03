@@ -19,7 +19,9 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
-	int l = n % 10; /* initilize and calculate last digit of n*/
+	int l; /*variable for last digit*/
+
+	l = n % 10; /*calculate last digit of n*/
 
 	if (l > 5) /*it's greater than 5*/
 	{
