@@ -17,12 +17,10 @@ int main(void)
 		{
 			putchar(i);
 			putchar(y);
-			
 			if (y == '9' && i == '8')
 				continue;
 			putchar(',');
 			putchar(' ');
-			
 		}
 	}
 
