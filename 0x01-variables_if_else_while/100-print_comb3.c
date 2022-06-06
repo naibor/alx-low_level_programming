@@ -11,9 +11,8 @@ int main(void)
 	int i;
 	int y;
 
-	for(i = '0' ; i < '9' ; i++)
+	for (i = '0' ; i < '9' ; i++)
 	{
-		 
 		for (y = i + 1 ; y <= '9' ; y++)
 		{
 			putchar(i);
@@ -21,8 +20,8 @@ int main(void)
 			putchar(',');
 			putchar(' ');
 		}
-			
 	}
-	putchar('\n')	
+
+	putchar('\n')
 	return (0);
 }
