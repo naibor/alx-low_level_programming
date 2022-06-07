@@ -15,7 +15,7 @@ int _islower(int c)
 
 	for (ch = 'A' ; ch <= 'Z' ; ch++)
 	{
-		if (c == 'Z')
+		if (c == ch)
 		{
 			_putchar(c);
 			result = 0;
