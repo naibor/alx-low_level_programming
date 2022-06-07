@@ -20,7 +20,7 @@ int print_sign(int n)
 		result = -1;
 		_putchar('-');
 
-	}else if (n > 0)
+	} else if (n > 0)
 	{
 		result = 1;
 		_putchar('+');
@@ -30,6 +30,6 @@ int print_sign(int n)
 		result = 0;
 		_putchar('0');
 	}
-	
+
 	return (result);
 }
