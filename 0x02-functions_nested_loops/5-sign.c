@@ -6,7 +6,7 @@
  *
  * @n: parameter of type int, called n
  *
- * Result: returns 0 if n is zero,
+ * Return: returns 0 if n is zero,
  * 1 if n is greater than zero,
  * -1 if n is less than zero
  *
