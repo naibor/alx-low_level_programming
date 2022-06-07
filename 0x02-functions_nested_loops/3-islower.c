@@ -11,16 +11,12 @@
 int _islower(int c)
 {
 	char ch;
-	int result;
+	int result = 0;
 
-	for (ch = 'A' ; ch <= 'Z' ; ch++)
+	for (ch = 'a' ; ch <= 'z' ; ch++)
 	{
-		if (c == ch)
-		{
-			_putchar(c);
-			result = 0;
-		}
-		result = 1;
+		if (ch == c)
+			result = 1;
 	}
 	return (result);
 }
