@@ -6,7 +6,7 @@
  *
  * @n: parameter of type int, name n.
  *
- * Return: returns 0
+ * Return: returns value of n
  */
 int _abs(int n)
 {
