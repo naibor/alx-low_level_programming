@@ -9,10 +9,17 @@
  */
 int _islower(int c)
 {
-	if (c >= 'A' && c <= 'Z')
+	char ch;
+	int result;
+	
+	for (ch = 'A' ; ch <= 'Z' ; ch++)
 	{
-		_putchar(c);
-		return (0);
+		if (c == 'Z')
+		{
+			_putchar(c);
+			result = 0;
+		}
+		result = 1;
 	}
-	return (1);
+	return (result);
 }
