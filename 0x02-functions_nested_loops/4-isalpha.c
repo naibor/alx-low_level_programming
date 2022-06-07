@@ -10,11 +10,11 @@
  */
 int _isalpha(int c)
 {
-	char ch ;
-	char CH ;
-	int result = 0;	
+	char ch;
+	char CH;
+	int result = 0;
 
-	for (ch = 'a'; ch <= 'z' ; ch ++)
+	for (ch = 'a'; ch <= 'z' ; ch++)
 	{
 		for (CH = 'A' ; CH <= 'Z'; CH++)
 		{
