@@ -3,7 +3,8 @@
 /**
  * main - Entry point
  *
- * Return: Always 0 (Success)
+ * Description: finds and prints the sum of the even-valued terms
+ * Return: returns 0
  */
 
 int main(void)
