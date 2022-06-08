@@ -17,7 +17,7 @@ void print_times_table(int n)
 		for (y = 0; y <= n; y++)
 		{
 			_putchar('0');
-			for (j = 1; k <= n; k++)
+			for (y = 1; k <= n; k++)
 				formater(y * k);
 			_putchar('\n');
 		}
