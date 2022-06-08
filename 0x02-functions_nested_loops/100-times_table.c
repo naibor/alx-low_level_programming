@@ -36,29 +36,29 @@ void print_times_table(int n)
 
 void formater(int x)
 {
-	if (n <= 9)
+	if (x <= 9)
 	{
 		_putchar(',');
 		_putchar(' ');
 		_putchar(' ');
 		_putchar(' ');
-		_putchar(n + '0');
+		_putchar(x + '0');
 	}
-	else if (n > 9 && n <= 99)
+	else if (x > 9 && x <= 99)
 	{
 		_putchar(',');
 		_putchar(' ');
 		_putchar(' ');
-		_putchar(n / 10 + '0');
-		_putchar(n % 10 + '0');
+		_putchar(x / 10 + '0');
+		_putchar(x % 10 + '0');
 	}
 	else
 	{
 		_putchar(',');
 		_putchar(' ');
-		_putchar(n / 100 + '0');
-		_putchar(n / 10 % 10 + '0');
-		_putchar(n % 10 + '0');
+		_putchar(x / 100 + '0');
+		_putchar(x / 10 % 10 + '0');
+		_putchar(x % 10 + '0');
 	}
 
 }
