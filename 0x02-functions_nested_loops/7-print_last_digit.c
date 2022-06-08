@@ -17,12 +17,12 @@ int print_last_digit(int n)
 	{
 		n = n * -1;
 		l = n % 10;
-		_putchar(l + '0');
-	} else
-	{
-		l = n % 10;
-		_putchar(l + '0');
 	}
-	return (l);
+	if (l < 0)
+	{
+		l = l * -1;
+	}
 
+	_putchar(l + '0');
+	return (l);
 }
