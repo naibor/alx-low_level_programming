@@ -18,7 +18,7 @@ int main(void)
 		if ((x % 5) == 0 || (x % 3) == 0)
 			sum += x;
 	}
-	printf("%lu\n", sum);
+	printf("%d\n", sum);
 
 	return (0);
 }
