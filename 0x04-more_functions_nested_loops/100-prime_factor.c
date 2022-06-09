@@ -17,7 +17,7 @@ int main(void)
 
 	for (x = 3 ; x < 12057; x += 2)
 	{
-		while (n % x == 0 && n != 0 )
+		while (n % x == 0 && n != 0)
 		{
 			n /= x;
 		}
