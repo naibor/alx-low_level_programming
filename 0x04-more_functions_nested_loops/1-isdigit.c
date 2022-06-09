@@ -21,6 +21,6 @@ int _isdigit(int c)
 	{
 		res = 0;
 	}
-	
+
 	return (res);
 }
