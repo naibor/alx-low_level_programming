@@ -1,27 +1,31 @@
 #include <stdio.h>
-
 /**
- * main - Entry point
+ * main - entry point
  *
- * Description: finds and prints the sum of the even-valued terms
+ * Description: find fibonacci sequence of 50 numbers
+ *
  * Return: returns 0
  */
-
 int main(void)
 {
-	int x;
-	long int fib[50], sum = 2;
+	long int first, second, next, sum;
 
-	fib[0] = 1;
-	fib[1] = 2;
-
-	for (x = 2; x < 50; x++)
+	first = 1;
+	second = 2;
+	next = first + second;
+	printf("%ld, ", first);
+	printf("%ld, ", second);
+	while (next < 4000000)
 	{
-		fib[x] = fib[x - 1] + fib[x - 2];
-		if ((fib[x] % 2) == 0 && fib[x] < 4000000)
-			sum += fib[x];
+		if (next % 2 == 0)
+		{
+			sum += next;
+		}
+		next = first + second;
+		first = second;
+		second = next;
 	}
-	printf("%ld\n", sum);
+	printf("%ld\n", sum + 2);
 
 	return (0);
 }
