@@ -4,7 +4,7 @@
  *
  * Description: find fibonacci sequence of 50 numbers
  *
- *
+ * Return: returns 0
  */
 int main(void)
 {
@@ -13,17 +13,13 @@ int main(void)
 
 	first = 1;
 	second = 2;
-	
 	printf("%ld, ", first);
-        printf("%ld, ", second);
-
-	while(count < 50)
+	printf("%ld, ", second);
+	while (count < 50)
 	{
-
 		next = first + second;
 		first = second;
 		second = next;
-
 		if (count == 49)
 		{
 			printf("%ld\n", next);
@@ -31,11 +27,7 @@ int main(void)
 		{
 			printf("%ld, ", next);
 		}
-		count ++;
+		count++;
 	}
-
-
-
-	return(0);
-
+	return (0);
 }
