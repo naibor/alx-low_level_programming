@@ -13,8 +13,6 @@ int main(void)
 	first = 1;
 	second = 2;
 	next = first + second;
-	printf("%ld, ", first);
-	printf("%ld, ", second);
 	while (next < 4000000)
 	{
 		if (next % 2 == 0)
