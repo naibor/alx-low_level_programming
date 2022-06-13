@@ -10,10 +10,18 @@
  */
 int _strlen(char *s)
 {
-	int x = 0;
+	int x;
 
-	for (x = 0; x <= s[x]; x++)
+	if (!s)
 	{
+		x = 0;
+	}
+	else
+	{
+		for (x = 0; x <= s[x]; x++)
+		{
+
+		}
 	}
 
 	return (x);
