@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	unsigned long int first, second, next;
+	unsigned long first, second, next;
 	int count  = 2;
 
 	first = 1;
@@ -29,5 +29,6 @@ int main(void)
 		}
 		count++;
 	}
+	printf("Count%d", count);
 	return (0);
 }
