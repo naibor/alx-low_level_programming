@@ -15,17 +15,18 @@
  */
 char *leet(char *str)
 {
+	char *ch = str;
 	int x, i = 0;
 	char encode[10] = {'a', 'A', 'e', 'E', 't', 'T', 'l', 'L'};
 	char code[10] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
 
-	while (str[i] != '\0')
+	while (ch[i] != '\0')
 	{
 		for (x = 0; x < 10; x++)
 		{
-			if (str[i] == encode[x])
+			if (ch[i] == encode[x])
 			{
-				str[i] = code[x];
+				ch[i] = code[x];
 			}
 		}
 
