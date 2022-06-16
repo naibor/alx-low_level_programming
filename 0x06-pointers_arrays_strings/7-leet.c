@@ -26,7 +26,6 @@ char *leet(char *str)
 		{
 			if (ch[i] == encode[x])
 			{
-				printf("value of ch[%d]: %c and encode[%d]: %c\n", x, ch[x], x, encode[x]);
 				ch[i] = code[x];
 			}
 		}
