@@ -15,23 +15,22 @@
  */
 char *leet(char *str)
 {
-	char *ch = str;
 	int x, i = 0;
-	char *encode = "aAeEtTlL";
-	char *code = "4433007711";
+	char encode[10] = {'a', 'A', 'e', 'E', 't', 'T', 'l', 'L'};
+	char code[10] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
 
-	while (ch[i] != '\0')
+	while (str[i] != '\0')
 	{
 		for (x = 0; x < 10; x++)
 		{
-			if (ch[i] == encode[x])
+			if (str[i] == encode[x])
 			{
-				ch[i] = code[x];
+				str[i] = code[x];
 			}
 		}
 
 	i++;
 	}
-	return (ch);
+	return (str);
 
 }
