@@ -9,7 +9,7 @@
  */
 void print_number(int n)
 {
-	int num = n;
+	unsigned int num = n;
 
 	if (n < 0)
 	{
@@ -18,7 +18,7 @@ void print_number(int n)
 	}
 	else
 	{
-		num = num;
+		num;
 	}
 
 	if (num / 10 != 0)
