@@ -6,36 +6,23 @@
  *
  * @dest: pointer parameter of type char
  * @src: pointer parameter of type char
- * @n: parameter of type int
+ * @n: parameter of type int, number of times to copy.
  *
  * Return: Returns char
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int len = 0;
-	int i;
-	char *ch = dest;
-	char *st = src;
+	int i = 0;
 
-	while (*src)
+	while (src[i] != '\0' && i < n)
 	{
-		src++;
-		len++;
-
+		dest[i] = src[i];
+		i++;
 	}
-	len = len + 1;
-
-	if (n > len)
+	while (i < n)
 	{
-		n = len;
+		dest[i] = '\0';
+		i++;
 	}
-
-	src = st;
-
-	for (i = 0; i < n; i++)
-	{
-		*dest++ = *src++;
-	}
-
-	return (ch);
+	return (dest);
 }
