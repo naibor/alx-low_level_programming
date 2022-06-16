@@ -11,9 +11,9 @@
 char *rot13(char *str)
 {
 	char *ch = str;
-	int i, x;
-	char input[53] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
-	char output[53] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm"
+	int i = 0, x;
+	char input[53] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char output[53] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	while (ch[i] != '\0')
 	{
@@ -21,6 +21,7 @@ char *rot13(char *str)
 			if (ch[i] == input[x])
 			{
 				ch[i] = output[x];
+				break;
 			}
 	i++;
 	}
