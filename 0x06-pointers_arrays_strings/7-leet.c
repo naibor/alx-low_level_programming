@@ -17,7 +17,7 @@ char *leet(char *str)
 {
 	char *ch = str;
 	int x, i = 0;
-	char encode[10] = {'a', 'A', 'e', 'E', 't', 'T', 'l', 'L'};
+	char encode[10] = {'a', 'A', 'e', 'E', '0', 'o', 't', 'T', 'l', 'L'};
 	char code[10] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
 
 	while (ch[i] != '\0')
@@ -26,12 +26,13 @@ char *leet(char *str)
 		{
 			if (ch[i] == encode[x])
 			{
+				printf("value of ch[%d]: %c and encode[%d]: %c\n", x, ch[x], x, encode[x]);
 				ch[i] = code[x];
 			}
 		}
-
 	i++;
 	}
+
 	return (ch);
 
 }
