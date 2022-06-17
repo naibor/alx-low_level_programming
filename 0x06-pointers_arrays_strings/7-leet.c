@@ -23,7 +23,7 @@ char *leet(char *str)
 	 * char code[10] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
 	 */
 
-	  char letters[] = "aAeEoOtTlL";
+	  char encode[] = "aAeEoOtTlL";
 	  char code[] = "4433007711";
 
 	while (ch[i] != '\0')
