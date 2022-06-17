@@ -17,17 +17,23 @@ char *leet(char *str)
 {
 	char *ch = str;
 	int x, i = 0;
-	char encode[10] = {'a', 'A', 'e', 'E', '0', 'o', 't', 'T', 'l', 'L'};
-	char code[10] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
+	/**
+	 * char encode[10] = {'a', 'A', 'e', 'E', '0', 'o', 't', 'T', 'l', 'L'};
+	 * char code[10] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
+	 */
+	char letters[] = "aAeEoOtTlL";
+	char code[] = "4433007711";
 
 	while (ch[i] != '\0')
 	{
-		for (x = 0; x < 10; x++)
+		x = 0;
+		while (x < 10)
 		{
-			if (ch[i] == encode[x])
+			if (ch[i] == letters[x])
 			{
 				ch[i] = code[x];
 			}
+		x++;
 		}
 	i++;
 	}
