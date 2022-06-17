@@ -9,25 +9,25 @@
  */
 char *cap_string(char *str)
 {
-	/*char *ch = str;*/
+	char *ch = str;
 	int x, i = 0;
 	char separator[13] = {' ', '\t', '\n', ',', ';', '.',
 		'!', '?', '"', '(', ')', '{', '}'};
 
-	while (str[i] != '\0')
+	while (ch[i] != '\0')
 	{
 		for (x = 0; x <= 12; x++)
 		{
-			if (str[i] == separator[x])
+			if (ch[i] == separator[x])
 			{
-				if (str[i + 1] >= 97 && str[i + 1] <= 122)
+				if (ch[i + 1] >= 97 && ch[i + 1] <= 122)
 				{
-					str[i + 1] += 32;
+					ch[i + 1] -= 32;
 				}
 			}
 		}
 
 	i++;
 	}
-	return (str);
+	return (ch);
 }
