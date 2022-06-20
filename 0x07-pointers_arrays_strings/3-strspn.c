@@ -13,7 +13,7 @@ unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int bytes = 1;
 	char *reset = s;
-	
+
 	while (*accept)
 	{
 		while (*s)
@@ -27,7 +27,7 @@ unsigned int _strspn(char *s, char *accept)
 		}
 		accept++;
 		s = reset;
-		
+
 	}
 	return (bytes);
 }
