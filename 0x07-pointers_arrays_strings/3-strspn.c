@@ -11,9 +11,8 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int bytes = 1;
+	unsigned int bytes = 0;
 	char *reset = s;
-	int tag;
 
 	while (*accept)
 	{
