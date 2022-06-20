@@ -17,24 +17,18 @@ unsigned int _strspn(char *s, char *accept)
 
 	while (*accept)
 	{
-		tag = 0;
 		while (*s)
 		{
 			if (*s == *accept)
 			{
 				bytes++;
-				tag = 1;
 				break;
 			}
 			s++;
 		}
 		accept++;
 		s = reset;
-		if (tag == 0)
-		{
-			break;
-		}
-
+		
 	}
 	return (bytes);
 }
