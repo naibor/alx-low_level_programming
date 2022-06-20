@@ -11,27 +11,23 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int bytes;
-	char *reset = accept;
-	int i;
-
-	while (*s)
+	unsigned int bytes = 1;
+	char *reset = s;
+	
+	while (*accept)
 	{
-		while (*accept)
+		while (*s)
 		{
-			i = 0;
 			if (*s == *accept)
 			{
 				bytes++;
-				i = 1;
 				break;
 			}
-			accept++;
+			s++;
 		}
-		s++;
-		accept = reset;
-		if (i == 0)
-			break;
+		accept++;
+		s = reset;
+		
 	}
 	return (bytes);
 }
