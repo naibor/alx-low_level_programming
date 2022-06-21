@@ -12,26 +12,24 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	int start = 0;
+	char *hay = haystack;
+	char *need = needle;
 
-	while (*needle)
+	while (*haystack)
 	{
-		while (*haystack)
+		hay = haystack;
+		needle = need;
+		while (*haystack == *needle)
 		{
-			if (*needle == *haystack)
-			{
-				start++;
-				break;
-			}
-			else if ((*needle != *haystack) && (start < 0))
-			{
-				return (NULL);
-
-			}
-
-		haystack++;
+			haystack++;
+			needle++;
 		}
-	needle++;
+		if (*needle == '\0')
+		{
+			return (haystack);
+		}
+		haystack = hay + 1;
+
 	}
-	return (needle - start);
+	return (NULL);
 }
