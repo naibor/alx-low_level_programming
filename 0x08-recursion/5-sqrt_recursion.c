@@ -20,6 +20,7 @@ int _sqrt_recursion(int n)
 	}
 	else if (check_non_squareroot(n) == 0)
 	{
+
 		return (-1);
 	}
 	else
@@ -76,7 +77,7 @@ int check_non_squareroot(int num)
 		return (1);
 	}
 	else
-		return (0);
+
 	return (0);
 }
 /**
@@ -90,9 +91,9 @@ int check_non_squareroot(int num)
  */
 int sum_num(int num)
 {
-	if (num <= 9)
+	if (num < 10)
 	{
 		return (num);
 	}
-	return (num % 10 + sum_num(num / 10));
+	return (sum_num(num % 10 + sum_num(num / 10)));
 }
