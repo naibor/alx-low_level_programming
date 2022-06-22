@@ -14,5 +14,6 @@ int _sqrt(int n, int root);
 int sum_num(int num);
 int check_non_squareroot(int num);
 int is_prime_number(int n);
+int prime(int num, int i);
 #endif /* MAIN_H */
 
