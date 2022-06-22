@@ -15,5 +15,9 @@ int sum_num(int num);
 int check_non_squareroot(int num);
 int is_prime_number(int n);
 int prime(int num, int i);
+int is_palindrome(char *s);
+int _strlen(char *s);
+int checks_palindrome(char *s, int length, int index);
+int wildcmp(char *s1, char *s2);
 #endif /* MAIN_H */
 
