@@ -12,27 +12,22 @@
  *
  * Return: returns 1 if error
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	int i, sum = 0;
+	int num, sum = 0, i;
 
-	if (argc == 1)
+	while (argc-- > 1)
 	{
-		printf("0\n");
-	}
-	while (argc > 1)
-	{
-		for (i = 1; i < argv[argc][i]; i++)
+		for (i = 0; argv[argc][i]; i++)
 		{
-			if (isdigit(argv[argc][i]) == 0)
+			if (argv[argc][i] > '9' || argv[argc][i] < '0')
 			{
 				printf("Error\n");
 				return (1);
 			}
 		}
-		sum += atoi(argv[argc]);
-		argc--;
-		printf("%d\n", sum);
+		num = atoi(argv[argc]);
+		sum += num;
 	}
 	printf("%d\n", sum);
 	return (0);
