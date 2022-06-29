@@ -42,7 +42,6 @@ char *argstostr(int ac, char **av)
 		str[y] = '\n';
 		y++;
 	}
-	str[y] = '\n';
 	return (str);
 
 }
