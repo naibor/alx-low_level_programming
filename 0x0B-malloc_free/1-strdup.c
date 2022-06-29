@@ -12,27 +12,27 @@
 char *_strdup(char *str)
 {
 	char *store;
-	unsigned int len = 0, x = 0;
+	unsigned int len = 0, x;
 
 	if (str == NULL)
 	{
 		return (NULL);
 	}
-	while (*str)
+	for (x = 0; str[x]; x++)
 	{
 		len++;
-		str++;
 	}
-	store = malloc(sizeof(char) * (len + 1));
+	len++;
+	store = malloc(sizeof(char) * (len));
 	if (store == NULL)
 	{
 		return (NULL);
 	}
-	for (; x < len; x++)
+	for (x = 0; str[x]; x++)
 	{
 		store[x] = str[x];
-		str++;
 	}
+	store[len] = '\0';
 	return (store);
 
 }
