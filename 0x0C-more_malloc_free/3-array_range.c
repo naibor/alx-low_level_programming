@@ -22,9 +22,13 @@ int *array_range(int min, int max)
 	/*allocate memory and check memory*/
 	alloc = malloc(sizeof(int) * count);
 	if (alloc == NULL)
+	{
+		free (alloc);
 		return (NULL);
+	}
+	count = 0;
 	for (x = min; x <= max; x++)
-		alloc[x] = x;
+		alloc[count++] = x;
 
 	return (alloc);
 
