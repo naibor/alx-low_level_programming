@@ -11,7 +11,8 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *alloc;
+	char *alloc, *s;
+	unsigned int i;
 
 	/*when size or nmemb is 0 return null*/
 	if (size == 0 || nmemb == 0)
@@ -23,6 +24,12 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (alloc == NULL)
 	{
 		free(alloc);
+	}
+	/*perform a memset. Fill memmory with 0*/
+	s = alloc;
+	for (i = 0; i < (nmemb * size); i++)
+	{
+		s[i] = 0;
 	}
 	return (alloc);
 
