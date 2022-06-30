@@ -4,7 +4,10 @@
  *
  * Description: Prints the minimum number of coins to make change
  * for an amount of money.
- * 
+ *
+ * @argc: parameter of type int
+ * @argv: parameter of type int
+ *
  * Return: returns 1 if error and 0 if otherwise
  *
  */
