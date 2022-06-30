@@ -24,6 +24,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (alloc == NULL)
 	{
 		free(alloc);
+		return (NULL);
 	}
 	/*perform a memset. Fill memmory with 0*/
 	s = alloc;
