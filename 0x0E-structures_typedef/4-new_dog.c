@@ -27,17 +27,22 @@ dog_t *new_dog(char *name, float age, char *owner)
 	/*alocate memory space to struct and check if null*/
 	pluto = malloc(sizeof(dog_t));
 	if (pluto == NULL)
+	{
+		free(pluto);
 		return (NULL);
+	}
 	/*allocate memory to items in data type and check if null*/
 	copyname = malloc(name_length + 1);
-	if (copyname == NULL)
+	copyowner = malloc(owner_length + 1);
+	if (copyname == NULL || copyowner == NULL)
+	{
+		free(copyname);
+		free(copyowner);
 		return (NULL);
+	}
 	for (x = 0; name[x]; x++)
 		copyname[x] = name[x];
 	copyname[x] = '\0';
-	copyowner = malloc(owner_length + 1);
-	if (copyowner == NULL)
-		return (NULL);
 	for (x = 0; owner[x]; x++)
 		copyowner[x] = owner[x];
 	copyowner[x] = '\0';
