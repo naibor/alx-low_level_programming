@@ -34,7 +34,7 @@
     - if the user tries to divide (/ or %) by 0, print Error, followed by a new line, and exit with the status 100
     - This task requires that you create four different files.
 ###### 3-calc.h
-    - This file should contain all the function prototypes and data structures used by the program. You can use this structure:
+- This file should contain all the function prototypes and data structures used by the program. You can use this structure:
 
 `	/**
  	* struct op - Struct op
