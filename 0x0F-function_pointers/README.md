@@ -36,7 +36,8 @@
 ###### 3-calc.h
 - This file should contain all the function prototypes and data structures used by the program. You can use this structure:
 
-`	/**
+```C
+	/**
  	* struct op - Struct op
  	*
  	* @op: The operator
@@ -48,7 +49,7 @@
     		int (*f)(int a, int b);
 	} 
 	op_t;
-`
+```
 	
 ###### 3-op_functions.c
 - This file should contain the 5 following functions (not more):
@@ -70,7 +71,9 @@
     - You are not allowed to use more than one while loop in your code
     - If s does not match any of the 5 expected operators (+, -, *, /, %), return NULL
     - You are only allowed to declare these two variables in this function:
-`    op_t ops[] = {
+
+```
+    op_t ops[] = {
         {"+", op_add},
         {"-", op_sub},
         {"*", op_mul},
@@ -79,7 +82,8 @@
         {NULL, NULL}
     };
     int i;
-`
+```
+
 ###### 3-main.c
 - This file should contain your main function only.
     - You are not allowed to code any other function than main in this file
