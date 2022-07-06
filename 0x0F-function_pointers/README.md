@@ -93,7 +93,7 @@
     - You are allowed to use a maximum of 3 if statements
 
 ###### 100-main_opcodes.c
-- A program that prints the opcodes of its own main function.
+- A program that prints the [opcodes](https://en.wikipedia.org/wiki/Opcode) of its own main function.
 	- Usage: ./main number_of_bytes
 	- Output format:
 		- the opcodes should be printed in hexadecimal, lowercase
