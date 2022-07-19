@@ -12,7 +12,7 @@
 list_t *add_node_end(list_t **head, const char *str)
 {
 	char *dup_str;
-	int count;
+	int count = 0;
 	list_t *new_node, *temp;
 
 	/*allocate space in memory and check if empty*/
