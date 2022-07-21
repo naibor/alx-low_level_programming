@@ -9,16 +9,7 @@
  */
 void print_binary(unsigned long int n)
 {
-	int x = 11, res;
-
-	for (; x >= 0; x--)
-	{
-		res = n >> x;
-
-		if (res & 1)
-			_putchar('1');
-		else
-			_putchar('0');
-	}
-	_putchar('\n');
+	if (n > 1)
+		print_binary(n >> 1);
+	_putchar((n & 1) + '0');
 }
