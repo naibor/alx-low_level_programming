@@ -4,7 +4,7 @@
  *
  * Description: sets the value of a bit to 1 at a given index.
  *
- * @n: pointer of type unsigned long int 
+ * @n: pointer of type unsigned long int
  * @index: parameter of type unsigned int
  *
  * Return: returns 1 if success and -1 if fail
