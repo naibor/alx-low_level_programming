@@ -23,10 +23,12 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (!fd)
 		return (-1);
 	/*get length*/
-	for (length = 0; text_content[length]; length)
+	for (length = 0; text_content[length]; length++)
 		;
-
+	/*write*/
 	written = write(fd, text_content, length);
+	if (written < 0)
+		return (-1);
 
 	return (1);
 }
