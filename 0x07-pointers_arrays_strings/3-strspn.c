@@ -23,6 +23,10 @@ unsigned int _strspn(char *s, char *accept)
 				bytes++;
 				break;
 			}
+			else if (*s == 32)
+			{
+				return(bytes);
+			}
 			s++;
 		}
 		accept++;

@@ -26,6 +26,14 @@ char *_strstr(char *haystack, char *needle);
 `
 - If you haven’t coded all of the above functions create empty ones, with the right prototype.
 - Don’t forget to push your main.h file in your repository, containing at least all the prototypes of the above functions.
+##### HOW TO:
+create object files for all the .c files using
+`gcc *.c -c -fPIC`
+-fPIC flag ensures the code is positioned independent
+then 
+`gcc *.o -shared -o nameofchoice.so`
+then export the path for liblaries so that the program knows where to look for them:
+`export LD_LIBRARY_PATH=$PWD:$LD_LIBRARY_PATH`
 
 ###### 1-create_dynamic_lib.sh
 - Create a script that creates a dynamic library called liball.so from all the .c files that are in the current directory.

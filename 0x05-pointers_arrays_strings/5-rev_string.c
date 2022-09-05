@@ -18,6 +18,7 @@ void rev_string(char *s)
 	while (i < x--)
 	{
 		ch = s[i];
+		printf("This is s[i]: %c\n", s[i]);
 		s[i++] = s[x];
 		s[x] = ch;
 	}
