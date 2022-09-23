@@ -9,7 +9,7 @@
 ###### 1-djb2.c
 - A hash function implementing the djb2 algorithm.
     - Prototype: unsigned long int hash_djb2(const unsigned char *str);
-    - You are allowed to copy and paste the function from this page
+    - You are allowed to copy and paste the function from [this page](https://gist.github.com/papamuziko/7bb52dfbb859fdffc4bd0f95b76f71e8)
 
 ###### 2-key_index.c
 - A function that gives you the index of a key.
